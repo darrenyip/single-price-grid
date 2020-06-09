@@ -1,0 +1,106 @@
+$bg-color: #e6eff5;
+
+$green: #c0df33;
+
+$green-dark: #2ab3b1;
+$green-light: #4abfbc;
+
+p {
+  font-family: Karla;
+}
+.main {
+  background-color: $bg-color;
+  height: 100vh;
+}
+.container {
+}
+.part-1-title {
+  p {
+    color: $green-dark;
+    // font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: -0.25px;
+  }
+}
+.part-1-benifit {
+  p {
+    color: $green;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.1875px;
+  }
+}
+.part-1-des {
+  p {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+
+    /* or 186% */
+    letter-spacing: -0.175px;
+
+    color: #9aa7be;
+  }
+}
+.part-2 {
+  background-color: $green-dark;
+  &-title {
+    p {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      letter-spacing: -0.225px;
+      color: #ffffff;
+    }
+  }
+  .price-des {
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: -0.2px;
+      color: #ffffff;
+    }
+  }
+}
+
+.amount {
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+.unit {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.part-3 {
+  background-color: $green-light;
+  &-title {
+    p {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      letter-spacing: -0.225px;
+      color: #ffffff;
+    }
+  }
+  &-des {
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: -0.175px;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.75;
+    }
+  }
+}
+.btn {
+  @apply font-bold rounded;
+}
+.btn-green {
+  background-color: $green;
+  @apply text-white;
+}

@@ -15,8 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
+            },
             "outputPath": "dist/single-price-grid",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -64,8 +67,11 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
+            },
             "browserTarget": "single-price-grid:build"
           },
           "configurations": {
@@ -123,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "single-price-grid"
+    }
+  },
+  "defaultProject": "single-price-grid",
+  "cli": {
+    "analytics": "2df95a81-b39d-4351-87ff-262c22045bc2"
+  }
 }
